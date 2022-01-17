@@ -1,0 +1,38 @@
+# PLACEHOLDERS:
+# <online> , <player> , <rank> , <crank> , <gamemode> , <tps>
+# <twitter> , <teamspeak> , <store> , <discord> , <website>
+#
+# %server% (ONLY WORK IN-QUEUE MODE)
+# %position% (ONLY WORK IN-QUEUE MODE)
+# %size% (ONLY WORK IN-QUEUE MODE)
+#
+# EXTERNAL PLACEHOLDER:
+# %bungee_total% | you need install expansion /papi ecloud download Bungee
+scoreboard:
+  enabled: true
+  title: "&9&lPepsi &7| &9Development"
+  default:
+    - "&7&m--------------------"
+    - "&fOnline&7: &b<online>"
+    - "&fRank&7: &b<rank>"
+    - ""
+    - "&7&opepsidev.com"
+    - "&7&m--------------------"
+  owner-mode:
+    - "&7&m--------------------"
+    - "&fTPS&7: &b<tps>"
+    - "&fPlayers&7: &b<online>"
+    - ""
+    - "&7&opepsidev.com"
+    - "&7&m--------------------"
+  in-queue:
+    - "&7&m--------------------"
+    - "&fOnline&7: &b<online>"
+    - "&fRank&7: &r<crank><rank>"
+    - ""
+    - "&fServer&7: &b<server>"
+    - "&fPosition&7: &b<position>"
+    - "&fSize&7: &b<size>"
+    - ""
+    - "&7&opepsidev.com"
+    - "&7&m--------------------"

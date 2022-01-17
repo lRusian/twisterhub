@@ -1,0 +1,159 @@
+#------------------------------------------------------#
+#              PEPSI DEVELOPMENT SERVICE               #
+#         Buy your complements on GOOD price!          #
+#      SourceCode selling in pepsidev.com/discord      #
+#  COMPLEMENT PUCHASE IN MC-MARKET OF PEPSIDEVELOPMENT #
+#                                                      #
+#         Domain: pepsidev.com                         #
+#         Store: store.pepsidev.com                    #
+#         Twitter: twitter.com/PepsiDevelopment        #
+#         Discord: pepsidev.com/discord                #
+#         AUTHOR: lRusian                              #
+#         TWITTER: @llRusian                           #
+#------------------------------------------------------#
+
+server-information:
+  license: "YOUR-LICENSE-PEPSI-DEV"
+  website: "pepsidev.com"
+  store: "store.pepsidev.com"
+  discord: "pepsidev.com/discord"
+  twitter: "twitter.com/PepsiDevelopment"
+  teamspeak: "ts.pepsidev.com"
+
+system:
+  queue: "NONE" # EZQUEUE, PORTAL, NONE
+  rank: "Vault" # Vault, AquaCore, Mizu, Zoot, Zoom, Hestia (LuckPerms = Vault)
+  analigy: "NONE" # CANALIGY, LANALIGY, NONE ( <coins> )
+
+jump:
+  enabled: true
+  velocity: 1.0
+  sound: "BLAZE_HIT"
+
+settings:
+  chat:
+    enable: true # hub.bypass
+    format: "<prefix-rank> <player>&7: &f<message>"
+    donator: "<prefix-rank> &6<player>&7: &6<message>" # hub.donator
+    staff: "&7[&9*&7] <prefix-rank> <player>&7: &9&l<message>" # hub.staff
+  mobs-spawn: false
+  prefix-rank: true #( REMOVE '[] AND ()' IN PREFIX OF RANK )
+  spawn-loc: world,-1.7726310435479782,111.0,19.634243346109002,-138,17
+
+welcome-player:
+  enable: true
+  message:
+    - "&7&m-----------------------------------"
+    - "&fWelcome <player> to &9&lPepsi Development"
+    - ""
+    - "&fWebsite&7: &9<website>"
+    - "&fStore&7: &9<store>"
+    - "&fRank&7: &r<prefix-rank>"
+    - "&fCoins&7: &e<coins>"
+    - ""
+    - "&7&m-----------------------------------"
+
+Selector:
+  Enabled: true
+  Item: "BOOK"
+  Name: "&f(*) &6&lServer-Selector &f(*)"
+  Slot: 4
+  Amount: 1
+  Lore:
+    - "&f&m-----------------------------"
+    - "&7&oSelect a server to go to..."
+    - "&f&m-----------------------------"
+Hub:
+  Enabled: true
+  Item: "NETHER_STAR"
+  Name: "&f(*) &b&lHub-Selector &f(*)"
+  Slot: 0
+  Amount: 1
+  Lore:
+    - "&f&m-----------------------------------"
+    - "&7&oSelect a hub server to go to..."
+    - "&f&m-----------------------------------"
+
+EnderButt:
+  Enabled: true
+  Item: "ENDER_PEARL"
+  Name: "&f(*) &a&lEnderButt &f(*)"
+  Slot: 9
+  Amount: 64
+  Lore:
+    - "&f&m-----------------------------------"
+    - "&7&oSelect a enderbutt server to go to..."
+    - "&f&m-----------------------------------"
+
+Inventory:
+  Selector:
+    Title: '&aServer Inventory'
+    Slots: 27
+    Items:
+      '1':
+        Item: DIAMOND_SWORD
+        Server: HCF
+        Name: '&aTeams'
+        Lore:
+          - '&f&m-------------------------------'
+          - '&7&oright click to join hcf queue'
+          - '&f&m-------------------------------'
+        Slot: 15
+        Autoqueue: false # Enable it only if you put something in "system queue"
+        Commands:
+          - '[player] play HCF'
+          - '[player] joinqueue HCF'
+      '2':
+        Item: APPLE
+        Server: Practice
+        Name: '&aPractice'
+        Lore:
+          - '&f&m-------------------------------'
+          - '&7&oright click to join practice queue'
+          - '&f&m-------------------------------'
+        Slot: 13
+        Autoqueue: false # Enable it only if you put something in "system queue"
+        Commands:
+          - '[player] play Practice'
+          - '[player] joinqueue Practice'
+      '3':
+        Item: DIAMOND_PICKAXE
+        Server: Prison
+        Name: '&aPrison'
+        Lore:
+          - '&f&m-------------------------------'
+          - '&7&oright click to join prison queue'
+          - '&f&m-------------------------------'
+        Slot: 11
+        Autoqueue: false # Enable it only if you put something in "system queue"
+        Commands:
+          - '[player] play Prison'
+          - '[player] joinqueue Prison'
+  Hub:
+    Title: "&aHub Inventory"
+    Slots: 9
+    Items:
+      1:
+        Item: "ENDER_PEARL"
+        Name: "&aHub 01"
+        Lore:
+          - "&f&m-------------------------------"
+          - "&7&oright click to join hub one queue"
+          - "&f&m-------------------------------"
+        Slot: 0
+        Commands:
+          - "[player] play hub1"
+          - "[message] Welcome to Hub-01"
+          - "[console] broadcast <player> joined to Hub-01"
+      2:
+        Item: "ENDER_PEARL"
+        Name: "&aHub 02"
+        Lore:
+          - "&f&m-------------------------------"
+          - "&7&oright click to join hub two queue"
+          - "&f&m-------------------------------"
+        Slot: 1
+        Commands:
+          - "[player] play hub2"
+          - "[message] Welcome to Hub-02"
+          - "[console] kick <player>"

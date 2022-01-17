@@ -1,0 +1,25 @@
+name: TwisterHub
+version: 0.2
+main: com.pepsidev.twisthub.Hub
+authors:
+  - JesusMX
+  - lRusian
+website: www.pepsidev.com
+commands:
+  discord:
+  store:
+  teamspeak:
+  twitter:
+  website:
+  setspawn:
+  treload:
+  owner:
+  spawn:
+  pepsi:
+    aliases:
+      - p
+      - twister
+      - thub
+      - twisterhub
+      - twist
+      - twisthub
