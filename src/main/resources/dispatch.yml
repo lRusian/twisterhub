@@ -1,0 +1,66 @@
+#------------------------------------------------------#
+#              PEPSI DEVELOPMENT SERVICE               #
+#We offer you these variables for all the messages here#
+#<player> Player NAME(IGN) | <gamemode> Player Gamemode#
+#     <discord> Discord of config.yml | <store> store  #
+#        <teamspeak> Teamspeak | <twitter> twitter     #
+#                  <website> Website                   #
+#      <rank> Rank Name | <crank> Color of Rank        #
+#  <online> Players online in all network  | <tps> TPS #
+#------------------------------------------------------#
+dispatch:
+  no-perms:
+    - "&cYou dont have permission to use this command."
+  reload:
+    ALL:
+      - "&aSuccessfully reloaded all .yml's!"
+    TABLIST:
+      - "&aSuccessfully reloaded tablist.yml!"
+    SCOREBOARD:
+      - "&aSuccessfully reloaded scoreboard.yml!"
+    DISPATCH:
+      - "&aSuccessfully reloaded dispatch.yml!"
+    CONFIG:
+      - "&aSuccessfully reloaded config.yml!"
+  spawn:
+    set:
+      - "&aSuccessfully set the spawn point."
+    tp:
+      - "&eSuccessfully teleported the spawn point."
+
+  owner:
+    active:
+      - "&aYour &4Owner Panel &awas activated perfectly"
+    remove:
+      - "&cYour &4Owner Panel &cwas perfectly deactivated"
+  # NETWORK - RED
+  discord:
+    enabled: true
+    lines:
+      - '&7&m-----------------------------'
+      - '&9Discord&7: &f<discord>'
+      - '&7&m-----------------------------'
+  store:
+    enabled: true
+    lines:
+      - '&7&m-----------------------------'
+      - '&dStore&7: &f<store>'
+      - '&7&m-----------------------------'
+  teamspeak:
+    enabled: true
+    lines:
+      - '&7&m------------------------------'
+      - '&6Teamspeak&7: &f<teamspeak>'
+      - '&7&m------------------------------'
+  twitter:
+    enabled: true
+    lines:
+      - '&7&m------------------------------'
+      - '&bTwitter&7: &f<twitter>'
+      - '&7&m------------------------------'
+  website:
+    enabled: true
+    lines:
+      - '&7&m------------------------------'
+      - '&aWebsite&7: &f<website>'
+      - '&7&m------------------------------'
